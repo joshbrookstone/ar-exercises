@@ -40,13 +40,11 @@ yaletown_store
 
 puts @mens_stores.all.map{|a| [a.name, a.annual_revenue]}
 
-# @womens_stores = Store.where(womens_apparel: true, annual_revenue: 100000..-Float::INFINITY)
+# @womens_stores = Store.where(womens_apparel: true, annual_revenue: 1000000..-Float::INFINITY)
 
 @womens_stores = Store.where("womens_apparel = ? AND annual_revenue < ?", true, 1000000)
 
-# puts @womens_stores.all.map{|a| [a.name]}
-
-
+puts @womens_stores.all.map{|a| [a.name, a.annual_revenue]}
 
 
 

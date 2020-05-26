@@ -11,7 +11,7 @@ puts "----------"
 
 puts Store.sum(:annual_revenue)
 puts Store.average(:annual_revenue)
-puts Store.where(annual_revenue: 100000..Float::INFINITY).count
+puts Store.where(annual_revenue: 1000000..Float::INFINITY).count
 
 ### Exercise 5: Calculations
 
